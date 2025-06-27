@@ -10,7 +10,7 @@ async function getAIResponse() {
   output.innerHTML = `<p><strong>Thinking about "${topic}"...</strong></p>`;
 
   try {
-    const response = await fetch("https://gpt-proxy-backend.michaelfrueh558.repl.co/ask", {
+    const response = await fetch("https://gpt-proxy-backend.onrender.com/ask", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
