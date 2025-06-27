@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-const OPENAI_API_KEY = "sk-proj-..."; // 🔐 Replace this with your actual key
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY; // my actual key
 
 app.post("/ask", async (req, res) => {
   const userMessage = req.body.message;
